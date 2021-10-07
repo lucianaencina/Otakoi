@@ -1,0 +1,34 @@
+header{
+    margin-bottom: 25px;
+    nav{
+        border-bottom: 2px solid $colorLilaDos ;
+    }
+ }
+ .subtitulo{
+     text-decoration: none;
+     color: black;
+     font-size: 1.5rem;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold; 
+ }
+ .subtitulo:hover{
+     color:$colorLila;
+ }
+ .activo{
+     color: $colorRosa; 
+ }
+ .activo:hover{
+     color:$colorRosa;
+ }
+ .perfil{
+     width: 30px;
+     height: 30px;
+     text-align: center;
+ }
+ol ul{
+    position: absolute;
+    display: none;
+    li {
+        display: block;
+    }
+}

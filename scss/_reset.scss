@@ -1,0 +1,17 @@
+@import 'mixin';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+} 
+
+body{
+    margin: 20px 80px;
+    background-image: url(../imgs/fondo{.jpg);
+    background-repeat: repeat-y;
+    background-size:cover;
+    @include tablet {
+        margin: 30px;
+        background-position: right;
+    }
+}

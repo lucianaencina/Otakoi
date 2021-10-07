@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de inicio con noticias, stickers, proximamente y destacados sobre Animes y Mangas" >
+    <meta name="keywords" content="Anime, Manga, Stickers, Japones, Reviews, top5, Noticias">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+    <title>Otakoi</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logotakoi.jpg" alt=""></a>
+            <button class=" navbar-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link subtitulo" aria-current="page" href="pages/anime.html">Anime</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link subtitulo" href="pages/manga.html">Manga</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link subtitulo" href="pages/reseñas.html">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link subtitulo" href="pages/japones.html">Japonés!</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><img class="perfil" src="imgs/loupe.png" alt=""></button>
+              </form>
+              <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="perfil" src="imgs/perfil.png" alt="">
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Guardados</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header> 
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="imgs/naruto carousel.jpg" class="d-block w-100 carrusel" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 class="div__h5__p">Naruto Shippuden</h5>
+            <p class="div__h5__p">Te contamos todo lo que tenes que saber para verla con o sin relleno!</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="imgs/shingeki carousel.jpg" class="d-block w-100 carrusel" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5 class="div__h5__p" >Shingeki No Kyojin.</h5>
+            <p class="div__h5__p">A la espera del final, muy pronto 2022.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/evangelion carousel.jpg" class="d-block w-100 carrusel" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5 class="div__h5__p">Neon Genesis Evangelion</h5>
+            <p class="div__h5__p">Se estrenó una nueva película, todo lo que tenes que saber, acá!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <div class="main__div">
+        <section class="div__section">
+          <h2 class="titulos">Noticias</h2>
+            <div class="noticia">
+              <h3> Finalmente y tras casi dos años de espera Kimetsu no Yaiba anuncia la fecha de estreno de su segunda temporada. </h3>
+              <p> Si bien la película Mugen Ressha-hen fue un trago de agua en el desierto, lo real es que los fans de Kimetsu no Yaiba necesitamos mucho más contenido para ser felices y es por eso que la segunda temporada, a casi dos años de la primera, se hizo esperar demasiado. Pero ya no más. <br> La continuación de la obra crada por Koyoharu Gotouge, titulada Kimetsu no Yaiba: Yuukaku-hen, se estrenará durante esta próxima temporada de otoño en Japón (octubre – diciembre), durante los días domingo. No solo eso, sino que se confirmó que el 25 de septiembre veremos un nuevo adelanto, donde tendremos la fecha exacta de inicio para las aventuras de Kamado Tanjiro. <br><br>Lee más en <a class="links" href="https://geeky.com.ar/kimetsu-no-yaiba-confirma-la-fecha-de-estreno-de-su-temporada-2/"> Geeky </a>
+              </p>
+            </div>
+            <div class="noticia">
+              <h3> Tras el anuncio de IVREA hace algunas semanas, ya tenemos la fecha del desembarco de para el manga Tokyo Revengers en Argentina. </h3>
+              <p> A pocos capítulos de finalizar la primera temporada del anime y con el manga ya cursando su arco final en Japón, esta parece ser una buena época para comenzar la serialización de Tokyo Revengers en Argentina. Así lo sintió IVREA y por eso es que ya podemos ponerle fecha al desembarco de la ToMan en tierras nacionales: 8 de octubre de 2021. <br> La confirmación llega a través del calendario de lanzamientos semanales que la editorial publica en su web dónde podemos ver la confirmación de los tres primeros tomos con una cadencia mensual. El primero, tal como mencionamos antes, llegará el 8 de octubre. El segundo con Takemichi del pasado en la tapa hará su estreno el 5 de noviembre, mientras que el volumen 3, ya con Mikey de protagonista, será el que cierre este 2021 estrenándose el 3 de diciembre. <br><br> Lee más en <a class="links" href="https://geeky.com.ar/confirmada-la-fecha-de-lanzamiento-del-manga-tokyo-revengers-en-argentina/"> Geeky </a>
+              </p>
+            </div>
+            <input class="verMas" type="button" value="Ver más">
+        </section>
+        <section class="div__section">
+          <h2 class="titulos">Stickers</h2>
+            <ul>
+              <li>Dittos</li>
+              <li><img class="sticker" src="imgs/cansaditto.png" alt="">
+                <img class="sticker" src="imgs/embriagaditto.png" alt="">
+                <img class="sticker" src="imgs/embrujaditto.png" alt="">
+                <img class="sticker" src="imgs/enojaditto.png" alt="">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <li>Demon Slayer</li>
+              <li> <img class="sticker" src="imgs/nezuko.png" alt="">
+                <img class="sticker" src="imgs/tanjiro.png" alt="">
+                <img class="sticker" src="imgs/tanjiro2.png" alt="">
+                <img class="sticker" src="imgs/tanjiro3.png" alt="">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <li>Naruto</li>
+              <li> <img class="sticker" src="imgs/rocklee.png" alt="">
+                <img class="sticker" src="imgs/kakashi1.png" alt="">
+                <img class="sticker" src="imgs/kakashi2.png" alt="">
+                <img class="sticker" src="imgs/kakashi3.png" alt="">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <li>Jujutsu Kaisen</li>
+              <li> <img src="imgs/sjk1.png" alt="" class="sticker">
+                <img src="imgs/sjk2.png" alt="" class="sticker">
+                <img src="imgs/sjk3.png" alt="" class="sticker">
+                <img src="imgs/sjk4.png" alt="" class="sticker">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <li>Haikyuu</li>
+              <li> <img src="imgs/h2.png" alt="" class="sticker">
+                <img src="imgs/h3.png" alt="" class="sticker">
+                <img src="imgs/h4.png" alt="" class="sticker">
+                <img src="imgs/h5.png" alt="" class="sticker">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <li>Dragon Ball</li>
+              <li> <img src="imgs/db1.png" alt="" class="sticker">
+                <img src="imgs/db2.png" alt="" class="sticker">
+                <img src="imgs/db3.png" alt="" class="sticker">
+                <img src="imgs/db4.png" alt="" class="sticker">
+                <input class="verMas" type="button" value="Descargar">
+              </li>
+              <input class="verMas" type="button" value="Ver más">
+            </ul>
+        </section>
+        <section class="div__section" >
+          <h2 class="titulos">Top 5 de la semana</h2>
+          <ul>
+            <li>Anime- Gurren Lagann 
+              <form class="valoracion">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form>
+            </li>
+            <li> Anime- Shaman King.
+              <form class="valoracion">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form>
+            </li>
+            <li>Manga - Assassination classroom 
+              <form class="valoracion">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form>
+            </li>
+            <li>Anime - Borutto
+              <form class="valoracion">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form>
+            </li>
+            <li>Manga - Aoha Ride
+              <form class="valoracion">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form>
+            </li>
+          </ul>
+        </section>
+        <section class="div__section">
+          <h2 class="titulos">Proximamente</h2>
+          <ul>
+            <li class="juntos"><img class="prox" src="imgs/boruto.jpg" alt=""> Boruto <br> Episodio 216 <br> Domingo 26-9</li>
+            <li class="juntos"><img class="prox" src="imgs/TOREV.jpg" alt="">Tokyo Revengers <br>Episodio 24 <br>Sábado 25-9</li>
+            <li class="juntos"><img class="prox" src="imgs/deminslayer.jpg" alt="">Demon Slayer <br>2da temporada<br> Sábado 25-9</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+            <div>
+                <a href="https://www.instagram.com/lulatronn/"> <img src="imgs/instagram.png" alt=""></a>
+                <a href="https://twitter.com/lulatronn"> <img src="imgs/twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/lucianaencina/"><img src="imgs/linkedin.png" alt=""></a>
+                <a href="https://www.behance.net/lulaencina"><img src="imgs/behance (1).png" alt=""></a>
+            </div>
+            <p>Hecho por Luciana Encina.</p>
+    </footer>      
+</body>
+</html>
