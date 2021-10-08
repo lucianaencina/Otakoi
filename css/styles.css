@@ -9,9 +9,8 @@ courier new,gillsans y arial*/
 }
 
 body {
-  margin: 20px 80px;
-  background-image: url(../imgs/fondo{.jpg);
-  background-repeat: repeat-y;
+  margin: 20px 70px;
+  background: url(../imgs/fondo{.jpg) repeat-y center fixed;
   background-size: cover;
 }
 
@@ -342,7 +341,7 @@ div.grilla {
       grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 30px;
-  padding: 40px 40px;
+  padding: 40px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,7 +424,7 @@ p a {
 
 /*Reseñas*/
 .reseñas {
-  margin: 25px;
+  margin: 25px 0px;
   background-color: #c6d4ffff;
   border-radius: 10px;
 }
@@ -439,7 +438,7 @@ p a {
 }
 
 .reseñas div {
-  margin: 25px;
+  margin: 15px;
   padding: 5px;
   border-radius: 10px;
   background-color: white;
