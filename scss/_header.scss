@@ -1,3 +1,4 @@
+@import 'mixin';
 header{
     margin-bottom: 25px;
     nav{
@@ -15,7 +16,7 @@ header{
      color:$colorLila;
  }
  .activo{
-     color: $colorRosa; 
+     color: $colorRosa;
  }
  .activo:hover{
      color:$colorRosa;
@@ -31,4 +32,10 @@ ol ul{
     li {
         display: block;
     }
+}
+.botonHambu{
+    color: $colorVioleta;
+    background-color: whitesmoke;
+    border: solid 1px $colorVioleta;
+    border-radius: 10px;
 }
