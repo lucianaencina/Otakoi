@@ -1,10 +1,18 @@
 @import 'mixin';
 header{
     margin-bottom: 25px;
+    position: sticky; z-index:3;
+    top: 0;
+    background-color: #eaeae9;
     nav{
-        border-bottom: 2px solid $colorLilaDos ;
+        border-bottom: 2px solid $colorLilaDos;
+        ul{
+            @include tablet{
+               align-items: center;
+            }
+        }
     }
- }
+}
  .subtitulo{
      text-decoration: none;
      color: black;
@@ -35,7 +43,14 @@ ol ul{
 }
 .botonHambu{
     color: $colorVioleta;
-    background-color: whitesmoke;
+    background-color: #eaeae9;
     border: solid 1px $colorVioleta;
     border-radius: 10px;
+}
+.botonBuscar{
+    border: 1px solid $colorRosa;
+}
+.botonBuscar:hover{
+    background-color: $colorRosa;
+    border: 1px solid $colorRosa;
 }

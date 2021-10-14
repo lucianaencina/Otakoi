@@ -6,11 +6,10 @@
 } 
 
 body{
-    margin: 20px 70px;
+    margin: 0px 0px;
     background: url(../imgs/fondo{.jpg) repeat-y center fixed;
     background-size:cover;
     @include tablet {
-        margin: 30px;
         background-position: right;
     }
 }

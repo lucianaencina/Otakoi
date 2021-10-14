@@ -9,24 +9,36 @@ courier new,gillsans y arial*/
 }
 
 body {
-  margin: 20px 70px;
+  margin: 0px 0px;
   background: url(../imgs/fondo{.jpg) repeat-y center fixed;
   background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
-    margin: 30px;
     background-position: right;
   }
 }
 
 header {
   margin-bottom: 25px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: #eaeae9;
 }
 
 header nav {
   border-bottom: 2px solid #7a82abff;
+}
+
+@media screen and (max-width: 769px) {
+  header nav ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subtitulo {
@@ -66,9 +78,18 @@ ol ul li {
 
 .botonHambu {
   color: #16001eff;
-  background-color: whitesmoke;
+  background-color: #eaeae9;
   border: solid 1px #16001eff;
   border-radius: 10px;
+}
+
+.botonBuscar {
+  border: 1px solid #f7717dff;
+}
+
+.botonBuscar:hover {
+  background-color: #f7717dff;
+  border: 1px solid #f7717dff;
 }
 
 /* Index */
@@ -78,14 +99,21 @@ ol ul li {
   padding: 40px 200px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .carrusel {
     height: 350px;
     padding: 20px 75px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 426px) {
+  .carrusel {
+    height: 200px;
+    padding: 15px 35px;
+  }
+}
+
+@media screen and (max-width: 769px) {
   .carousel-item {
     padding-bottom: 25px;
   }
@@ -97,31 +125,10 @@ ol ul li {
   font-size: 1rem;
 }
 
-.main__div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 50px 0px;
-}
-
-.div__section {
-  display: inline-block;
-  width: 600px;
-  height: auto;
-  padding-bottom: 20px;
-}
-
-.div__section p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-.div__section p ul {
-  padding-left: 0px;
+@media screen and (max-width: 426px) {
+  .div__h5__p {
+    margin-top: 110px;
+  }
 }
 
 .portada {
@@ -160,7 +167,7 @@ li {
   margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .sticker {
     width: 80px;
     height: 80px;
@@ -186,6 +193,56 @@ h3 {
   width: 200px;
   height: 110px;
   margin-right: 15px;
+}
+
+.contenedor {
+  padding: 12px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor .row {
+  padding-bottom: 25px;
+}
+
+.contenedor .row .col-md-8 {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 769px) {
+  .contenedor .row .col-md-8 {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contenedor .row .col-md-8 {
+    width: 95%;
+    margin: 15px;
+  }
+}
+
+.contenedor .row .col-md-4 {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 769px) {
+  .contenedor .row .col-md-4 {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contenedor .row .col-md-4 {
+    width: 95%;
+    margin: 15px;
+  }
+}
+
+.contenedor .row ul {
+  padding-left: 0px;
+  background-color: #eaeae9;
 }
 
 /*Estrellitas */
@@ -252,7 +309,6 @@ footer {
   font-weight: bolder;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#16001eff), to(#3a014e));
   background-image: linear-gradient(to bottom, #16001eff, #3a014e);
-  margin: 20px 0px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,9 +326,16 @@ footer img {
   margin: 8px;
 }
 
+@media screen and (max-width: 426px) {
+  footer img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 /* Anime */
 .container {
-  text-align: center;
+  text-align: left;
 }
 
 .container__anime {
@@ -301,28 +364,11 @@ footer img {
   font-weight: bold;
 }
 
-.imgJaponeshiragana2 {
-  background-image: url("../imgs/hiragana2.jpg");
-  width: 700px;
-  height: 720px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.imgJaponesnumerosjapones {
-  background-image: url("../imgs/numerosjapones.jpg");
-  width: 700px;
-  height: 720px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.imgJaponesnumerosjapones2 {
-  background-image: url("../imgs/numerosjapones2.jpg");
-  width: 700px;
-  height: 720px;
-  background-repeat: no-repeat;
-  background-position: center;
+.japno {
+  display: block;
+  margin: auto;
+  width: 1000px;
+  height: 600px;
 }
 
 img {
@@ -358,7 +404,7 @@ div.grilla {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   div.grilla {
     display: -ms-grid;
     display: grid;
@@ -375,6 +421,13 @@ div.grilla {
   }
 }
 
+@media screen and (max-width: 426px) {
+  div.grilla {
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+  }
+}
+
 div.grilla img.manga {
   width: 200px;
   height: 320px;
@@ -382,10 +435,16 @@ div.grilla img.manga {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   div.grilla img.manga {
     width: 200px;
     height: 320px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  div.grilla img.manga {
+    display: none;
   }
 }
 
@@ -432,9 +491,15 @@ p a {
 
 /*Reseñas*/
 .reseñas {
-  margin: 25px 0px;
+  margin: 25px 50px;
   background-color: #c6d4ffff;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 426px) {
+  .reseñas {
+    margin: 15px;
+  }
 }
 
 .reseñas h2 {
@@ -475,7 +540,7 @@ p a {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .review {
     width: 250px;
     height: 150px;
@@ -497,7 +562,7 @@ p a {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .formulario {
     margin: 15px 10px;
     background-color: whitesmoke;
