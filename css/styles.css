@@ -174,6 +174,13 @@ li {
   }
 }
 
+@media screen and (max-width: 426px) {
+  .sticker {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .noticia {
   background-color: white;
   border: solid 2px #2dc2bdff;
@@ -193,6 +200,13 @@ h3 {
   width: 200px;
   height: 110px;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 426px) {
+  .prox {
+    width: 100px;
+    height: 55px;
+  }
 }
 
 .contenedor {
@@ -336,14 +350,15 @@ footer img {
 /* Anime */
 .container {
   text-align: left;
+  margin: 35px auto;
 }
 
 .container__anime {
-  border: 1px solid #16001eff;
+  background-color: #16001eff;
   width: 300px;
-  height: 350px;
+  height: 470px;
   margin: 10px  auto;
-  padding: 15px;
+  position: relative;
 }
 
 .container__anime p.nombreAnime {
@@ -355,6 +370,52 @@ footer img {
 
 .container__anime p {
   font-size: 1rem;
+  color: white;
+}
+
+.container__anime:hover {
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+  color: #2dc2bdff;
+}
+
+.anime {
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  background-color: #7a82abff;
+  width: 250px;
+  height: 300px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.middle:hover {
+  opacity: 1;
+}
+
+.text .boton {
+  background-color: #c6d4ffff;
+  border: #c6d4ffff;
+  color: black;
+  font-family: 'Georama', sans-serif;
+  font-size: 0.9rem;
+  padding: 5px 5px;
+  width: 150px;
 }
 
 /* Japones*/
@@ -364,13 +425,6 @@ footer img {
   font-weight: bold;
 }
 
-.japno {
-  display: block;
-  margin: auto;
-  width: 1000px;
-  height: 600px;
-}
-
 img {
   width: 200px;
 }
@@ -378,11 +432,6 @@ img {
 p, li {
   line-height: 25px;
   margin: 10px;
-}
-
-.links {
-  color: black;
-  font-style: italic;
 }
 
 /* Manga */
@@ -451,6 +500,7 @@ div.grilla img.manga {
 div.grilla .grilla__seccion {
   border-right: 1.5px solid #2dc2bdff;
   border-top: 1.5px solid #2dc2bdff;
+  padding-top: 5px;
 }
 
 div.grilla .grilla__seccion p {
@@ -485,8 +535,55 @@ h1 {
   color: white;
 }
 
-p a {
+.meGusta {
+  color: #f7717dff;
+  background-color: white;
+  border: 1px solid #f7717dff;
+  font-size: 1.5rem;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.meGusta:hover {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito1:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito2:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito3:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito4:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+#favorito5:checked ~ label {
+  color: white;
+  background-color: #f7717dff;
+}
+
+/*Links*/
+.links {
   text-decoration: none;
+  color: black;
+  font-style: italic;
 }
 
 /*Reseñas*/
