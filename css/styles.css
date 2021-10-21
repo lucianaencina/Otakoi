@@ -365,7 +365,8 @@ footer img {
   color: #2dc2bdff;
   font-family: 'Georama', sans-serif;
   font-size: 2rem;
-  margin-top: 25px;
+  padding-left: 15px;
+  position: relative;
 }
 
 .container__anime p {
@@ -416,6 +417,56 @@ footer img {
   font-size: 0.9rem;
   padding: 5px 5px;
   width: 150px;
+}
+
+/*tooltip*/
+.tooltip {
+  opacity: 1;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  color: black;
+  border: 2px solid #2dc2bdff;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+@media screen and (max-width: 769px) {
+  .tooltip .tooltiptext {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .tooltip .tooltiptext {
+    display: none;
+  }
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #2dc2bdff transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* Japones*/
