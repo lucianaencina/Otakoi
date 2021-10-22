@@ -201,7 +201,7 @@ footer{
 .container__anime{
     background-color: $colorVioleta;
     width: 300px;
-    height: 470px;
+    height: 480px;
     margin: 10px  auto;
     position: relative;
     p.nombreAnime{
@@ -210,6 +210,8 @@ footer{
         font-size: 2rem;
         padding-left: 15px;
         position: relative;
+        z-index: inherit;
+        line-height: 1;
     }
     p{
         font-size: 1rem;
@@ -259,10 +261,9 @@ footer{
     opacity: 1;
     z-index: 1;
 }
-  
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 500px;
+    width: 550px;
     height: auto;
     background-color: white;
     color: black;
@@ -275,6 +276,7 @@ footer{
     z-index: 1;
     top: -5px;
     left: 110%;
+    line-height: 1.5;
     @include tablet{
         display: none;
     }
@@ -282,7 +284,6 @@ footer{
         display: none;
     }
 }
-  
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
@@ -297,6 +298,43 @@ footer{
     visibility: visible;
 }
 
+.tooltip .tooltiptextleft {
+    visibility: hidden;
+    width: 550px;
+    height: auto;
+    background-color: white;
+    color: black;
+    border: 2px solid $colorCeleste;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    line-height: 1.5;
+    @include tablet{
+        display: none;
+    }
+    @include celular{
+        display: none;
+    }
+  }
+  
+  .tooltip .tooltiptextleft::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent $colorCeleste;
+  }
+  .tooltip:hover .tooltiptextleft {
+    visibility: visible;
+  }
 /* Japones*/
 .hiragana{
     font-size: 1rem;

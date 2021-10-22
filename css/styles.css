@@ -356,7 +356,7 @@ footer img {
 .container__anime {
   background-color: #16001eff;
   width: 300px;
-  height: 470px;
+  height: 480px;
   margin: 10px  auto;
   position: relative;
 }
@@ -367,6 +367,8 @@ footer img {
   font-size: 2rem;
   padding-left: 15px;
   position: relative;
+  z-index: inherit;
+  line-height: 1;
 }
 
 .container__anime p {
@@ -427,7 +429,7 @@ footer img {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 500px;
+  width: 550px;
   height: auto;
   background-color: white;
   color: black;
@@ -440,6 +442,7 @@ footer img {
   z-index: 1;
   top: -5px;
   left: 110%;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 769px) {
@@ -466,6 +469,51 @@ footer img {
 }
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptextleft {
+  visibility: hidden;
+  width: 550px;
+  height: auto;
+  background-color: white;
+  color: black;
+  border: 2px solid #2dc2bdff;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 769px) {
+  .tooltip .tooltiptextleft {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .tooltip .tooltiptextleft {
+    display: none;
+  }
+}
+
+.tooltip .tooltiptextleft::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2dc2bdff;
+}
+
+.tooltip:hover .tooltiptextleft {
   visibility: visible;
 }
 
