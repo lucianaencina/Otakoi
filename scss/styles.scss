@@ -15,6 +15,7 @@ courier new,gillsans y arial*/
         padding: 20px 75px ;
     }
     @include celular{
+        width: 300px;
         height: 200px;
         padding: 15px 35px ;
     }
@@ -61,8 +62,8 @@ li {
         height: 80px;
     }
     @include celular{
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 }
 .noticia{
@@ -71,6 +72,9 @@ li {
     border-radius: 15px;
     margin: 10px 0px;
     padding: 12px;
+    @include celular{
+        
+    }
 }
 h3{
     font-family: 'Courier New', Courier, monospace;
@@ -98,7 +102,7 @@ h3{
                 width: 800px;
             }
             @include celular{
-                width: 95%;
+                width: 310px;
                 margin: 15px;
             }
         }
@@ -108,7 +112,7 @@ h3{
                 width: 800px;
             }
             @include celular{
-                width: 95%;
+                width: 310px;
                 margin: 15px;
             }
         }
@@ -161,6 +165,9 @@ input[type="radio"]:checked ~ label {
     background-image: url("https://i.pinimg.com/564x/c3/96/b7/c396b715d21f85d3144777eb5871040d.jpg");
     background-position: center bottom; 
     border-radius: 8px; 
+    @include celular{
+        margin: 0px;
+    }
 }
 ul.tipoDeManga li{
     list-style: none;
@@ -336,10 +343,29 @@ footer{
     visibility: visible;
   }
 /* Japones*/
-.hiragana{
-    font-size: 1rem;
-    color: $colorCeleste;
-    font-weight: bold;
+.japones{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    @include tablet{
+        width: 700px;
+        height: auto;
+    }
+    @include celular{
+        width: 315px;
+        height: auto;
+        display: none;
+    }
+}
+.celu{
+    display: none;
+    @include celular{
+        height: auto;
+        width: 310px;
+        margin: auto;
+        display:block;
+    }
 }
 
 img{
@@ -370,7 +396,7 @@ div.grilla{
             justify-content: center;
         }
         @include celular{
-            grid-template-columns: 360px;
+            grid-template-columns: 300px;
         }
     img.manga{
         width: 200px;

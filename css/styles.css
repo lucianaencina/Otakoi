@@ -108,6 +108,7 @@ ol ul li {
 
 @media screen and (max-width: 426px) {
   .carrusel {
+    width: 300px;
     height: 200px;
     padding: 15px 35px;
   }
@@ -176,8 +177,8 @@ li {
 
 @media screen and (max-width: 426px) {
   .sticker {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -232,7 +233,7 @@ h3 {
 
 @media screen and (max-width: 426px) {
   .contenedor .row .col-md-8 {
-    width: 95%;
+    width: 310px;
     margin: 15px;
   }
 }
@@ -249,7 +250,7 @@ h3 {
 
 @media screen and (max-width: 426px) {
   .contenedor .row .col-md-4 {
-    width: 95%;
+    width: 310px;
     margin: 15px;
   }
 }
@@ -306,6 +307,12 @@ input[type="radio"]:checked ~ label {
   background-image: url("https://i.pinimg.com/564x/c3/96/b7/c396b715d21f85d3144777eb5871040d.jpg");
   background-position: center bottom;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 426px) {
+  .titulos {
+    margin: 0px;
+  }
 }
 
 ul.tipoDeManga li {
@@ -518,10 +525,39 @@ footer img {
 }
 
 /* Japones*/
-.hiragana {
-  font-size: 1rem;
-  color: #2dc2bdff;
-  font-weight: bold;
+.japones {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .japones {
+    width: 700px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .japones {
+    width: 315px;
+    height: auto;
+    display: none;
+  }
+}
+
+.celu {
+  display: none;
+}
+
+@media screen and (max-width: 426px) {
+  .celu {
+    height: auto;
+    width: 310px;
+    margin: auto;
+    display: block;
+  }
 }
 
 img {
@@ -571,8 +607,8 @@ div.grilla {
 
 @media screen and (max-width: 426px) {
   div.grilla {
-    -ms-grid-columns: 360px;
-        grid-template-columns: 360px;
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
   }
 }
 
