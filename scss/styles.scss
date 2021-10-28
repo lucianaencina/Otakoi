@@ -94,6 +94,9 @@ h3{
 .contenedor{
     padding: 12px 0px;
     justify-content: center;
+    @include tablet{
+        margin: auto;
+    }
     .row{
         padding-bottom: 25px;
         .col-md-8{
@@ -367,7 +370,37 @@ footer{
         display:block;
     }
 }
-
+.navJapones{
+    margin: 10px 200px;
+    @include tablet{
+        margin: 5px;
+    }
+    @include celular{
+        margin: 5px;
+    }
+    .botonJapones{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: black;
+        border: 2px solid $colorRosa;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .activee{
+        background-color: $colorLila;
+        border: 2px solid $colorLila;
+    }
+}
+.botonJapones:hover{
+    color: $colorRosa;
+    border: 2px solid black;
+}
+.activee:hover{
+    color: black;
+    background-color: $colorLila;
+    border: 2px solid $colorLila;
+}
 img{
     width: 200px;
 }

@@ -217,6 +217,12 @@ h3 {
           justify-content: center;
 }
 
+@media screen and (max-width: 769px) {
+  .contenedor {
+    margin: auto;
+  }
+}
+
 .contenedor .row {
   padding-bottom: 25px;
 }
@@ -558,6 +564,48 @@ footer img {
     margin: auto;
     display: block;
   }
+}
+
+.navJapones {
+  margin: 10px 200px;
+}
+
+@media screen and (max-width: 769px) {
+  .navJapones {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .navJapones {
+    margin: 5px;
+  }
+}
+
+.navJapones .botonJapones {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #f7717dff;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.navJapones .activee {
+  background-color: #c6d4ffff;
+  border: 2px solid #c6d4ffff;
+}
+
+.botonJapones:hover {
+  color: #f7717dff;
+  border: 2px solid black;
+}
+
+.activee:hover {
+  color: black;
+  background-color: #c6d4ffff;
+  border: 2px solid #c6d4ffff;
 }
 
 img {
