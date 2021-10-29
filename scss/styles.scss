@@ -99,20 +99,23 @@ h3{
     }
     .row{
         padding-bottom: 25px;
+        @include celular{
+            width: 320px;
+        }
         .col-md-8{
             margin-bottom: 25px;
             @include tablet{
-                width: 800px;
+                width:730px;
             }
             @include celular{
                 width: 310px;
-                margin: 15px;
+                margin: 5px 15px;
             }
         }
         .col-md-4{
             margin-bottom: 25px;
             @include tablet{
-                width: 800px;
+                width: 730px;
             }
             @include celular{
                 width: 310px;
@@ -408,7 +411,112 @@ p,li{
     line-height : 25px;
     margin: 10px;
 }
-
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px $colorRosa;
+    text-align: center;
+    margin-top: 75px;
+    @include celular{
+        margin: 15px 4px;
+    }
+}
+.divJap{
+    overflow-x: auto;
+    table {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+        border-collapse: collapse;
+        width: 800px;
+        margin: 35px auto;
+        td, th {
+          border: 1px solid white;
+          text-align: left;
+          padding: 8px;
+        }
+        @include tablet{
+            margin: 25px;
+            width: 720px;
+        }
+        @include celular{
+            margin: 10px;
+        }
+    } 
+}
+tr:nth-child(even) {
+    background-color: #d6d6d6;
+} 
+.tablaJap{
+    background-color: $colorLilaDos;
+    color: white;
+}
+.textoJap{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 450px;
+    text-align: left;
+    @include tablet{
+        margin: 25px 100px;
+    }
+    @include celular{
+        margin: 10px;
+    }
+}
+.colorJap{
+    margin: 15px ;
+}
+.colores{
+    height: 140px;
+    width: 140px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 200px;
+    text-align: center;
+    padding-top: 52px;
+    @include celular{
+        height: 100px;
+        width: 125px;
+        padding: 32px 5px;
+    }
+}
+.rojo{
+    background-color: red;
+}
+.amarillo{
+    background-color: yellow;
+}
+.gris{
+    background-color: gray;
+}
+.naranja{
+    background-color: orange;
+}
+.verde{
+    background-color: green;
+    color: white;
+}
+.rosa{
+    background-color: pink;
+}
+.blanco{
+    background-color: white;
+}
+.violeta{
+    background-color: purple;
+    color: white;
+}
+.colorTexto{
+    font-size: 1.5rem;
+    height: 140px;
+    width: 140px;
+    padding: 35px 20px;
+    background-color: #eaeae9;
+    @include celular{
+        padding: 15px 25px;
+    }
+}
 /* Manga */
 div.grilla{
         display:grid;  

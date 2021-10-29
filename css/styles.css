@@ -227,20 +227,26 @@ h3 {
   padding-bottom: 25px;
 }
 
+@media screen and (max-width: 426px) {
+  .contenedor .row {
+    width: 320px;
+  }
+}
+
 .contenedor .row .col-md-8 {
   margin-bottom: 25px;
 }
 
 @media screen and (max-width: 769px) {
   .contenedor .row .col-md-8 {
-    width: 800px;
+    width: 730px;
   }
 }
 
 @media screen and (max-width: 426px) {
   .contenedor .row .col-md-8 {
     width: 310px;
-    margin: 15px;
+    margin: 5px 15px;
   }
 }
 
@@ -250,7 +256,7 @@ h3 {
 
 @media screen and (max-width: 769px) {
   .contenedor .row .col-md-4 {
-    width: 800px;
+    width: 730px;
   }
 }
 
@@ -615,6 +621,151 @@ img {
 p, li {
   line-height: 25px;
   margin: 10px;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #f7717dff;
+  text-align: center;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 426px) {
+  h2 {
+    margin: 15px 4px;
+  }
+}
+
+.divJap {
+  overflow-x: auto;
+}
+
+.divJap table {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  border-collapse: collapse;
+  width: 800px;
+  margin: 35px auto;
+}
+
+.divJap table td, .divJap table th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+@media screen and (max-width: 769px) {
+  .divJap table {
+    margin: 25px;
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .divJap table {
+    margin: 10px;
+  }
+}
+
+tr:nth-child(even) {
+  background-color: #d6d6d6;
+}
+
+.tablaJap {
+  background-color: #7a82abff;
+  color: white;
+}
+
+.textoJap {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 450px;
+  text-align: left;
+}
+
+@media screen and (max-width: 769px) {
+  .textoJap {
+    margin: 25px 100px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .textoJap {
+    margin: 10px;
+  }
+}
+
+.colorJap {
+  margin: 15px;
+}
+
+.colores {
+  height: 140px;
+  width: 140px;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 200px;
+  text-align: center;
+  padding-top: 52px;
+}
+
+@media screen and (max-width: 426px) {
+  .colores {
+    height: 100px;
+    width: 125px;
+    padding: 32px 5px;
+  }
+}
+
+.rojo {
+  background-color: red;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.gris {
+  background-color: gray;
+}
+
+.naranja {
+  background-color: orange;
+}
+
+.verde {
+  background-color: green;
+  color: white;
+}
+
+.rosa {
+  background-color: pink;
+}
+
+.blanco {
+  background-color: white;
+}
+
+.violeta {
+  background-color: purple;
+  color: white;
+}
+
+.colorTexto {
+  font-size: 1.5rem;
+  height: 140px;
+  width: 140px;
+  padding: 35px 20px;
+  background-color: #eaeae9;
+}
+
+@media screen and (max-width: 426px) {
+  .colorTexto {
+    padding: 15px 25px;
+  }
 }
 
 /* Manga */
