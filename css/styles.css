@@ -338,10 +338,16 @@ ul.tipoDeManga li {
 
 /* Footer ya se que lo voy a terminar cambiando */
 footer {
-  color: white;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  margin-top: 105px;
+  color: black;
   font-weight: bolder;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#16001eff), to(#3a014e));
-  background-image: linear-gradient(to bottom, #16001eff, #3a014e);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,8 +360,8 @@ footer {
 }
 
 footer img {
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
   margin: 8px;
 }
 
@@ -364,6 +370,11 @@ footer img {
     width: 15px;
     height: 15px;
   }
+}
+
+.futer {
+  width: 250px;
+  height: 250px;
 }
 
 /* Anime */
@@ -638,6 +649,16 @@ p, li {
   }
 }
 
+.subtitulosJap {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 5px #7a82abff;
+  text-align: center;
+  margin-top: 65px;
+}
+
 .divJap {
   overflow-x: auto;
 }
@@ -678,27 +699,21 @@ tr:nth-child(even) {
   color: white;
 }
 
-.contenedorJap {
-  width: auto;
-  text-align: center;
-  margin: auto;
-}
-
-.contenedorJap .textoJap {
-  font-size: 1rem;
+.textoJap {
+  font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 30px 0px;
-  text-align: left;
+  margin: 30px 350px;
+  text-align: center;
 }
 
 @media screen and (max-width: 769px) {
-  .contenedorJap .textoJap {
+  .textoJap {
     margin: 25px 100px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .contenedorJap .textoJap {
+  .textoJap {
     margin: 10px;
   }
 }
@@ -792,6 +807,48 @@ tr:nth-child(even) {
 @media screen and (max-width: 426px) {
   .colorTexto {
     padding: 15px 25px;
+  }
+}
+
+.estaciones {
+  text-align: center;
+}
+
+.estaciones img {
+  width: 500px;
+  margin: 10px 50px;
+}
+
+@media screen and (max-width: 769px) {
+  .estaciones img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .estaciones img {
+    width: 200px;
+  }
+}
+
+.clima {
+  text-align: center;
+}
+
+.clima img {
+  width: 400px;
+  margin: 10px 25px;
+}
+
+@media screen and (max-width: 769px) {
+  .clima img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .clima img {
+    width: 200px;
   }
 }
 
