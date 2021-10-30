@@ -623,7 +623,7 @@ p, li {
   margin: 10px;
 }
 
-h2 {
+.titulosJap {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
   font-weight: bold;
@@ -633,7 +633,7 @@ h2 {
 }
 
 @media screen and (max-width: 426px) {
-  h2 {
+  .titulosJap {
     margin: 15px 4px;
   }
 }
@@ -678,21 +678,27 @@ tr:nth-child(even) {
   color: white;
 }
 
-.textoJap {
+.contenedorJap {
+  width: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.contenedorJap .textoJap {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 30px 450px;
+  margin: 30px 0px;
   text-align: left;
 }
 
 @media screen and (max-width: 769px) {
-  .textoJap {
+  .contenedorJap .textoJap {
     margin: 25px 100px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .textoJap {
+  .contenedorJap .textoJap {
     margin: 10px;
   }
 }
@@ -722,6 +728,7 @@ tr:nth-child(even) {
 
 .rojo {
   background-color: red;
+  color: white;
 }
 
 .amarillo {
@@ -730,6 +737,7 @@ tr:nth-child(even) {
 
 .gris {
   background-color: gray;
+  color: white;
 }
 
 .naranja {
@@ -752,6 +760,25 @@ tr:nth-child(even) {
 .violeta {
   background-color: purple;
   color: white;
+}
+
+.marron {
+  background-color: brown;
+  color: white;
+}
+
+.azul {
+  background-color: blue;
+  color: white;
+}
+
+.negro {
+  background-color: black;
+  color: white;
+}
+
+.celeste {
+  background-color: lightblue;
 }
 
 .colorTexto {
