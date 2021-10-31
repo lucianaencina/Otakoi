@@ -206,14 +206,17 @@ footer{
         height: 45px;
         margin: 8px; 
         @include celular{
-            width: 15px;
-            height: 15px;
+            width: 25px;
+            height: 25px;
         }
     }
 }
 .futer{
     width: 250px;
     height: 250px;
+    @include celular{
+        display: none;
+    }
 }
 /* Anime */
 .container{
@@ -343,9 +346,9 @@ footer{
     @include celular{
         display: none;
     }
-  }
+}
   
-  .tooltip .tooltiptextleft::after {
+.tooltip .tooltiptextleft::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -354,10 +357,10 @@ footer{
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent $colorCeleste;
-  }
-  .tooltip:hover .tooltiptextleft {
+}
+.tooltip:hover .tooltiptextleft {
     visibility: visible;
-  }
+}
 /* Japones*/
 .japones{
     width: auto;
@@ -471,6 +474,7 @@ tr:nth-child(even) {
     color: white;
 }
 .textoJap{
+    background-color: #eaeae9;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px 350px;

@@ -367,14 +367,20 @@ footer img {
 
 @media screen and (max-width: 426px) {
   footer img {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
   }
 }
 
 .futer {
   width: 250px;
   height: 250px;
+}
+
+@media screen and (max-width: 426px) {
+  .futer {
+    display: none;
+  }
 }
 
 /* Anime */
@@ -700,6 +706,7 @@ tr:nth-child(even) {
 }
 
 .textoJap {
+  background-color: #eaeae9;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   margin: 30px 350px;
